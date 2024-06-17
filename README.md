@@ -8,4 +8,6 @@ Co by jsi měl/a zlepšit: Co zlepšit:
 
 
 
-Opraveno  Předěláno řádek 97 a 109 a 138
+Opraveno  
+
+ řádek 97 a 109 a 138
