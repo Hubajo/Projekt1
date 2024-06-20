@@ -1,13 +1,7 @@
 Můj první projekt
 
 Co by jsi měl/a zlepšit: Co zlepšit:
-1. Odstranění nežádoucích znaků: řádek 89, 90 , stejně jako u výběru textu si myslel dopředu, kdyby byly přidány texty. Tak i zde to mohlo být, když teď přidáme text kde budou i jiné znaky, tak už je neodstraníš
-2. Podmínka na řádku 108: to není dobrý přístup, nelze specificky vynechat jedno slovo, musíš ho systematicky zpracovat stejně jako ostatní. Je to zase pro univerzálnost toho kódu. Přeci, v budoucnu nebudeš dopisovat dalších X slov, protože by ti nevycházel výstup statistiky.
-3. Špatné statistiky u title slov: zde výpis jednotlivých slov (['Situated', 'Kemmerer', 'Fossil', 'Butte', 'Twin', 'Creek', 'Valley', 'The', 'Union', 'Pacific', 'Railroad']) jedno tam není, US také začíná velkým písmenem.
+1. Statistika slov, které začínají velkým písmem: zde výpis ['Situated', 'Kemmerer', 'Fossil', 'Butte', 'Twin', 'Creek', 'Valley', 'The', '30N', 'Union', 'Pacific', 'Railroad'] - pozor na metodu istitle, ta evokuje k tomu, že zjistí zda slovo začíná velkým písmenem, což je částečně pravda. Ale istitle funguje následovně, zjistí zda první abecední znak ve slově je velký a ostatní malé, ale ignoruje neabecední znaky. Takže istitle vidí slovo 30N jako N. Zkus si pohrát s metodou isupper, isaplha a istitle a koukej jak se chovají v různých situacích
 
 
-
-
-Opraveno  
-
- řádek 97 a 109 a 138
+Opraveno za použití metody .isupper snad už to bude ok 
